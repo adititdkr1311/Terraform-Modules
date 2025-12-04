@@ -8,9 +8,14 @@ variable "tenancy" {
 
 variable "vpc_id" {
   description = "The ID of the existing VPC."
-  type        = string 
+  type        = string
 }
 
 variable "subnet_cidr" {
   default = "10.0.1.0/24"
+}
+
+variable "env" {
+  description = "The environment on which to spin infra"
+  type        = string
 }
